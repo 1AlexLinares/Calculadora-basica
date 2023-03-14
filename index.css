@@ -1,0 +1,87 @@
+
+/*
+Elementos propios del HTML no es necesario determinar un . o # y se aplican a todos los elementos que correpondan a la etiqueta
+clases = Se determinana por medio de un . al inicio y luego el nombre de la clase (Se puede repetir y se aplica a los elementos con clases similares)
+Identificadores = Es determinado por medio de un # y el nombre seguido del id (Usado especificamente)
+*/
+
+@import url("http://fonts.cdnfonts.com/css/open-sans");
+
+body{
+
+    background-color: darkolivegreen; /*Colores dentro del body*/
+
+    text-align: center;
+    
+    font-family: "Open Sans";
+
+}
+
+
+td{
+    
+    width: 50px;  /*Ancho*/
+    height: 50px;  /*Alto*/
+
+    background-color: darkgoldenrod; /*Color dentro de las celdas*/
+
+    /*border: 5px black; /*Linea del borde*/
+
+
+    /* padding-top: 100px; */
+    /* padding: 10px 20px 30px 40px; */
+
+
+    border-radius: 50%; /*Redondea a radio*/
+    border-style:solid ; /*Estilo de borde*/
+
+    
+    cursor: progress; /*Cambia el puntero cuando se le pone encima*/
+
+
+
+    
+}
+
+
+
+
+
+#resultado{
+
+    height: 100px;
+
+    padding: 10px;
+
+    
+}
+
+table{
+    margin: 0 auto;
+}
+
+#ressin{
+
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Cambia el font del resultado*/
+    
+}
+
+
+/*Importante*/
+
+
+.numero input{
+
+    width: 80%;
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    cursor: default;
+    font-size: 20px;
+    text-align: center;
+}
+
