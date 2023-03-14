@@ -14,105 +14,75 @@
 
 <body>
 
-  <h1>Calculadora</h1>
+      <h1>Calculadora</h1>
 
-  <!--Division-->
+        <!--Division-->
 
-  <div id="Tb">
-
-
+      <div id="Tb">
 <!--Parte vizualizar datos-->
 
-    <table class="calc" cellspacing="5">
+      <table class="calc" cellspacing="5">
 
-      <tr>
+          <tr>
+              <td colspan="2" id="num1" class="numero">
+                  <input id="vnum1" type="text" readonly/> <!--Ingreso o representación de datos readonly No permite acceder información-->
+              </td>
 
-        <td colspan="2" id="num1" class="numero">
+              <td id="operador"></td>
 
-          <input id="vnum1" type="text" readonly/> <!--Ingreso o representación de datos readonly No permite acceder información-->
-          
-        </td>
+              <td colspan="2" id="num2" class="numero">
+                  <input id="vnum2" type="text" readonly/>
+              </td>
+          </tr>
 
-        <td id="operador">
-            
-        </td>
-
-
-        <td colspan="2" id="num2" class="numero">
-
-
-          <input id="vnum2" type="text" readonly/>
-
-      
-
-
-        </td>
-
-
-      </tr>
-
-      <tr>
-
-        <td colspan="5" id="resultado">
-          <table id="ressin">
-            <tr>
-              <td></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
+          <tr>
+              <td colspan="5" id="resultado">
+                <table id="ressin">
+                  <tr>
+                    <td></td>
+                  </tr>
+                </table>
+              </td>
+          </tr>
 
 <!--Parte inferior de teclado inicio-->
 
 
-
       <tr>
-
-        <!--On es utilizado para determinar eventos en el HTML que tienen comunicación con el JS-->
+      <!--On es utilizado para determinar eventos en el HTML que tienen comunicación con el JS-->
         <td onmouseover="insertar_digito(7)"  > 7 </td>
+      <!--FUNCIONES CON JS-->
+          <td onclick="insertar_digito(8)">8</td>
+          <td onclick="insertar_digito(9)">9</td>
+          <td onclick="realizar_operacion('suma')">+</td>
+          <td onclick="realizar_operacion('potencia')">^</td>
+        </tr>
 
-        <!--FUNCIONES CON JS-->
-
-        <td onclick="insertar_digito(8)">8</td>
-        <td onclick="insertar_digito(9)">9</td>
-        <td onclick="realizar_operacion('suma')">+</td>
-        <td onclick="realizar_operacion('potencia')">^</td>
-
-      </tr>
-      <tr>
-        <td onclick="insertar_digito(4)">4</td>
-        <td onclick="insertar_digito(5)">5</td>
-        <td onclick="insertar_digito(6)">6</td>
-        <td onclick="realizar_operacion('resta')">-</td>
-        <td onclick="realizar_operacion('modulo')">MOD</td>
-      </tr>
-      <tr>
-        <td onclick="insertar_digito(1)">1</td>
-        <td onclick="insertar_digito(2)">2</td>
-        <td onclick="insertar_digito(3)">3</td>
-        <td onclick="realizar_operacion('multiplicacion')">x</td>
-        <td onclick="borrar()">C</td>
-      </tr>
-      <tr>
-
-        <td>&#60;-</td>
-
-        <td onclick="insertar_digito(0)">0</td>
-        <td onclick="insertar_digito('.')">.</td>
-        <td onclick="realizar_operacion('division')">/</td>
-        <td onclick="resolver( )">=</td>
-      </tr>
+        <tr>
+          <td onclick="insertar_digito(4)">4</td>
+          <td onclick="insertar_digito(5)">5</td>
+          <td onclick="insertar_digito(6)">6</td>
+          <td onclick="realizar_operacion('resta')">-</td>
+          <td onclick="realizar_operacion('modulo')">MOD</td>
+        </tr>
+        <tr>
+          <td onclick="insertar_digito(1)">1</td>
+          <td onclick="insertar_digito(2)">2</td>
+          <td onclick="insertar_digito(3)">3</td>
+          <td onclick="realizar_operacion('multiplicacion')">x</td>
+          <td onclick="borrar()">C</td>
+        </tr>
+        
+        <tr>
+          <td>&#60;-</td>
+          <td onclick="insertar_digito(0)">0</td>
+          <td onclick="insertar_digito('.')">.</td>
+          <td onclick="realizar_operacion('division')">/</td>
+          <td onclick="resolver( )">=</td>
+        </tr>
     </table>
-
   </div>
-
-
-
-  <!--Scripts construido de la parte logica-->
-  <script src="nayu.js"> </script>
-
-
-
+    <!--Scripts construido de la parte logica-->
+  <script src="log.js"></script>
 </body>
-
 </html>
